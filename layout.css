@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-/*Custom Properties*/
-
 :root {
     --ff-primary: 'Permanent Marker', cursive;
     --ff-secondary: 'ABeeZee', sans-serif;
@@ -17,8 +15,8 @@
     --clr-dark: #000000;
     --clr-accent: #cd3700;
     --clr-accent2: #5A79A5;
-    --fs-h1: 3rem;
-    --fs-h2: 2.3rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1rem;
     --fs-body: 1rem;
 }
 
@@ -67,9 +65,9 @@ figcaption{
 
 .info{
     position: relative;
-    right: 50px;
-    grid-column: span 1;
+    right: 90px;
 }
+
 
 .boxes
 .icon{
@@ -85,18 +83,13 @@ figcaption{
     border-radius: 3px;
 }
 
+
 .boxes:hover{
     box-shadow: 7px 7px 11px 2px rgba(0,0,0,0.83);
-    width: 180px;
-    height: 180px;
-    position: relative;
-    bottom: 15px;
+    overflow: hidden;
+    transform: scale(1.05);
 
-    transition-timing-function: ease-in;
-    transition: 0.5s;
-
-    transition-timing-function: ease-out;
-    transition: 0.25s;
+    transition: transform 500ms ease;
 }
 
 .box-container > div:nth-child(2):hover{
